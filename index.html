@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Innovation Software</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* Reset and Base Styles */
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #434343;
+        color: #333;
+      }
+      
+      /* Header and Buttons Styles */
+      h1 {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        background: #222;
+        color: #fff;
+        border-bottom: 2px solid #4169e1;
+      }
+      
+      .buttons {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        background: #222;
+        color: #fff;
+        border-bottom: 2px solid #4169e1;
+      }
+      
+      h3 {
+        text-align: center;
+        padding: 1rem;
+        margin: 0;
+        background: #222;
+        color: #fff;
+        border-bottom: 2px solid #4169e1;
+      }
+      
+      /* Paragraph Styles */
+      p {
+        max-width: 800px;
+        margin: 1rem auto;
+        padding: 1rem;
+        font-size: 1.2em;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      /* Button Styles */
+      .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: #4169e1;
+        border: none;
+        color: #fff;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 200px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+        vertical-align: middle;
+      }
+      
+      .button span {
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 25px;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      
+      /* Image Container Styles */
+      .image-container {
+        max-width: 800px;
+        margin: 1rem auto;
+        padding: 1rem;
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+      <button class="button" onclick="location.href='#products'">
+        <span>Products</span>
+      </button>
+      <button class="button" onclick="location.href='#about'">
+        <span>About Us</span>
+      </button>
+      <button class="button" onclick="location.href='#rate'">
+        <span>Ratings</span>
+      </button>
+    </div>
+
+    <h1>Innovation Software</h1>
+    <p>This is my HTML page. It looks much better now!</p>
+
+    <div id="products">
+      <h3>Products by Innovation/Innovative Software</h3>
+      
+      <!-- First Product -->
+      <article>
+        <p>
+          <strong>Innovation Web Explorer:</strong><br />
+          Description: A reliable browser with no search history for privacy, quick speed searches, and accurate URL results.
+        </p>
+        <div class="image-container">
+          <a href="https://example.com">
+            <img
+              src="https://media-hosting.imagekit.io/ba82bef7b98a4bd8/Airbrush-Image-Enhancer__2_-removebg-preview.png?Expires=1837799362&amp;Key-Pair-Id=K2ZIVPTIP2VGHC&amp;Signature=bv6scbV4I2J8WZ4Z-L5Z51~QAUsjhAkNg5SUXLGIzYv2~WEfp5G5gnQ73KpquLvPxsPomGJAssh1xD4x01sC-5O5EAP-FTCuR9Gs4V7yKHXLllOySpIPYL4O5zE8Fyiu6TkC3DLPezFMCCGIjDQ8mbpfGvA3dHwiu~kJnq1n-CsHHsPZgWP2c5opChOtuGhDJCqthfickFL7bt9Uvr2tCfuoEbgckqiLwlCJ1r1Y5lfyTBkC~HbOCSfefedepICqZvpEO2SAasVo54-7MPBC0ukhtG75i2TM6WvFNaRnegPUnchBDFImN~qRHLtteAtLJX0LebL5vXRAtgqBFmbscQ__"
+              alt="Screenshot of Innovation Web Explorer"
+            />
+          </a>
+        </div>
+      </article>
+      
+      <!-- Second Product -->
+      <article>
+        <p>
+          <strong>Innovative Intelligence:</strong><br />
+          Description: An AI software for all people.
+        </p>
+        <div class="image-container">
+          <a
+            href="https://media-hosting.imagekit.io//96643aab390245a6/screenshot_1741977992655.png?Expires=1836585993&amp;Key-Pair-Id=K2ZIVPTIP2VGHC&amp;Signature=ckSGaTX4afA3zhk70pEZH1mwDT4pYKvlWrBgvMHYeEMxvIOxbx-7LdAGJxou~BM4x5YwPqoKeAr7xudCTQcf6FbMjMC9EWujKFKqOtccILUeYLFe95R7FCKM-icrzrLsGEs52maacupveUZ4BzIubpdYtpWdlnsEF46BTruDhSo4cFLnBobzlbcXMBnGSGxTBNRnPOnASqvdcYKkaB9LPIietHAGervPiVfA~8Vz7psjW-vqCkWq2Mem3knay4A4kyL0SnAwLy7dv5rA3L2pAkrlYUItubYXLvogqxKc47AQspGa5-txYRRfOQupkLGz6YTfyYSXMFlXmi-8UkgxSA__"
+          >
+            <img
+              src="https://media-hosting.imagekit.io//96643aab390245a6/screenshot_1741977992655.png?Expires=1836585993&amp;Key-Pair-Id=K2ZIVPTIP2VGHC&amp;Signature=ckSGaTX4afA3zhk70pEZH1mwDT4pYKvlWrBgvMHYeEMxvIOxbx-7LdAGJxou~BM4x5YwPqoKeAr7xudCTQcf6FbMjMC9EWujKFKqOtccILUeYLFe95R7FCKM-icrzrLsGEs52maacupveUZ4BzIubpdYtpWdlnsEF46BTruDhSo4cFLnBobzlbcXMBnGSGxTBNRnPOnASqvdcYKkaB9LPIietHAGervPiVfA~8Vz7psjW-vqCkWq2Mem3knay4A4kyL0SnAwLy7dv5rA3L2pAkrlYUItubYXLvogqxKc47AQspGa5-txYRRfOQupkLGz6YTfyYSXMFlXmi-8UkgxSA__"
+              alt="Screenshot of Innovation Web Explorer"
+            />
+          </a>
+        </div>
+      </article>
+
+      <!-- Third Product -->
+      <article>
+        <p>
+          <strong>Innovation OS:</strong><br />
+          Description: A reliable Operating System made with HTML, CSS, and JS. Includes a browser and AI.
+        </p>
+        <div class="image-container">
+          <a href="https://example.com">
+            <img
+              src="https://media-hosting.imagekit.io/f34658f66b4d484d/Screenshot%202025-03-28%2010.32.16%20AM.png?Expires=1837785068&Key-Pair-Id=K2ZIVPTIP2VGHC&Signature=M8GzIHbdVXB4l-elWp-TLEVPZIz9Yfu24o0-wfkoqJxW5LC4z896r7Fc4NjcDHywef0-gq-Hxp-qwuPS3faSnLSXbqSLWH-Lx~7c4hgcBzuoH-ZY9tACaSqp4uK0tf8auGb0ZN3QLLVla7x~6wAbTKajC2L9xDhirU9pYQEyDV2rj73mK8cqQY5LfxyAK3axnbbRjA2YrgSBuAFExmt5tC31BUgZPWHaC6kXhDffo-EkhwQLkZN8RDZt0RkpkcsF59uLxaJPI2vUtpuScDNOWONW8bLpQt0R4VeNZlpORyuHf8NmVMYIJTMWvDFV0HkbXCdVsgu28fcaqPYK0ILzTQ__"
+              alt="Screenshot of Innovation Web Explorer"
+            />
+          </a>
+        </div>
+      </article>
+    </div>
+    
+    <div id="about">
+      <h3>About Us</h3>
+      
+      
+      <article>
+        <p>
+          <strong>Our Motto:</strong>
+          <br>
+        "Our organization is dedicated to delivering exceptional technological solutions that cater to a diverse range of needs and applications, ensuring accessibility and excellence for all individuals." <i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-		Owner of Innovation Software</i> 
+          
+        </p>
+
+      </article>
+      
+      <article>
+        <p>
+          <strong>Other Facts:</strong>
+          <br>
+        The Code Languages We Run On: HTML, CSS, and JavaScript <br>
+        Our Official Release Date: N/A  
+        </p>
+
+      </article>
+
+
+    </div>    
+    <div id="rate">
+      <h3>Ratings</h3>
+      
+      
+      <article>
+        <p>
+          <strong>Our Ratings So Far:</strong>
+          <br>
+          As of 4/10/2025: <strong>5 out of 5 stars ⭐!</strong> <br>
+      Current Rating (Updated Recently): <strong>5 out of 5 stars ⭐!</strong> <br>  
+          Innovation Web Explorer: <strong>5 out of 5 stars ⭐!</strong>	<br>
+          Innovative Intelligence: <strong>5 out of 5 stars ⭐!</strong>	<br>
+          Innovation OS: <strong>5 out of 5 stars ⭐!</strong>
+        </p>
+
+      </article>
+      
+      <article>
+        <p>
+          <strong>Rate Us:</strong>
+          <br>
+          <a href="https://form.jotform.com/AaravJithin194/rate-innovation-software">Rate Us Now</a>
+        </p>
+
+      </article>
+
+
+    </div>    
+
+  
+  
+  </body>
+</html>
